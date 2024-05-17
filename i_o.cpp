@@ -3,11 +3,15 @@
 using namespace std;
 const string newline = ".\n";
 
-int main() {
+int getInteger() {
   int i;
   cout << "Enter a number: ";
   cin >> i;
-  cout << "The number you entered is " << i;
+  return i;
+}
+
+int main() {
+  int i = getInteger();
   cout << " and its double is " << i+i << newline;
   string name;
   cout << "Enter your name: ";
