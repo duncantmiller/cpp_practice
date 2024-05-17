@@ -27,12 +27,16 @@ void printWinner(int i, string name) {
   cout << "Congratulations " << name << "! You entered the winning number " << i << "!" << newline;
 }
 
-int main() {
-  int i = getInteger();
-  string name = getString();
+void printCorrectResponse(int i, string name) {
   if (i == 5)
     printWinner(i, name);
   else
     printResults(i, name);
+}
+
+int main() {
+  int i = getInteger();
+  string name = getString();
+  printCorrectResponse(i, name);
   return 0;
 }
