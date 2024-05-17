@@ -1,0 +1,15 @@
+# Ignore .vscode folder
+.vscode/
+
+# Ignore build files
+*.o
+*.out
+*.exe
+
+# Ignore dSYM folders (macOS debugging information)
+*.dSYM/
+
+# Ignore other common files
+*.log
+*.tmp
+.DS_Store
