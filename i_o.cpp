@@ -17,10 +17,15 @@ string getString() {
   return name;
 }
 
+void printResults(int i, string name) {
+  cout << "The number you entered was " << i;
+  cout << " and its double is " << i+i << newline;
+  cout << "Hi " << name << " did you like how I added " << i << " and " << i << " to get " << i+i << "?" << newline;
+}
+
 int main() {
   int i = getInteger();
   string name = getString();
-  cout << " and its double is " << i+i << newline;
-  cout << "Hi " << name << " did you like how I added " << i << " and " << i << " to get " << i+i << "?" << newline;
+  printResults(i, name);
   return 0;
 }
