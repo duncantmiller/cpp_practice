@@ -28,9 +28,8 @@ void printWinner(int i, string name) {
 }
 
 void printCountdown(int i, string name) {
-  while (i>0) {
+  for (; i > 0; i--) {
     cout << i << ", ";
-    --i;
   }
   cout << "Blast off " << name << newline;
 }
