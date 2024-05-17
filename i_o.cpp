@@ -10,12 +10,17 @@ int getInteger() {
   return i;
 }
 
-int main() {
-  int i = getInteger();
-  cout << " and its double is " << i+i << newline;
+string getString() {
   string name;
   cout << "Enter your name: ";
   cin >> name;
+  return name;
+}
+
+int main() {
+  int i = getInteger();
+  string name = getString();
+  cout << " and its double is " << i+i << newline;
   cout << "Hi " << name << " did you like how I added " << i << " and " << i << " to get " << i+i << "?" << newline;
   return 0;
 }
