@@ -27,9 +27,19 @@ void printWinner(int i, string name) {
   cout << "Congratulations " << name << "! You entered the winning number " << i << "!" << newline;
 }
 
+void printCountdown(int i, string name) {
+  while (i>0) {
+    cout << i << ", ";
+    --i;
+  }
+  cout << "Blast off " << name << newline;
+}
+
 void printCorrectResponse(int i, string name) {
   if (i == 5)
     printWinner(i, name);
+  else if (i == 10)
+    printCountdown(i, name);
   else
     printResults(i, name);
 }
