@@ -23,9 +23,16 @@ void printResults(int i, string name) {
   cout << "Hi " << name << " did you like how I added " << i << " and " << i << " to get " << i+i << "?" << newline;
 }
 
+void printWinner(int i, string name) {
+  cout << "Congratulations " << name << "! You entered the winning number " << i << "!" << newline;
+}
+
 int main() {
   int i = getInteger();
   string name = getString();
-  printResults(i, name);
+  if (i == 5)
+    printWinner(i, name);
+  else
+    printResults(i, name);
   return 0;
 }
